@@ -1,4 +1,6 @@
 #include "header.h"
+//==================================================================================================================================
+
 void strcpy_my(char *destination, char *source)
 {   
     int i = 0;
@@ -14,7 +16,7 @@ void strcpy_my(char *destination, char *source)
     }
 }
 
-void printf_str(char *string)
+void puts_my(char *string)
 {   
     int i = 0;
     while (string[i] != '\0')
@@ -42,7 +44,7 @@ void strncpy_my(char *destination, char *source, int n)
     }
 }
 
-void strcat_my(char *destination, char *append)
+char *strcat_my(char *destination, const char *append)
 {
     int i = 0;
     int j = 0;
@@ -53,14 +55,16 @@ void strcat_my(char *destination, char *append)
         i++;
         j++;
     }
+    return destination;
 }
 
-int strchr_my(char *string, char ch)
+char *strchr_my(const char *string, int ch) 
 {
     int i = 0;
     while ((string[i] != ch) && (string[i] != '\0')) i++;
-    if (string[i] == '\0') return -1;
-    if (string[i] != '\0') return i;
+
+    if (string[i] == '\0') return NULL;
+    else return string + i; 
 }
 
 int strlen_my(char *string)

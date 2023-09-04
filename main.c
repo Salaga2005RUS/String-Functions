@@ -7,36 +7,36 @@ int main ()
     int n = 3;
 
     printf ("initial lines:\n");
-    printf_str(source);
-    printf_str(destination);
+    puts_my(source);
+    puts_my(destination);
 
     /* strcpy_my(destination, source); */
 
    /* printf ("lines after strcpy_my\n");
-    printf_str(source);
-    printf_str(destination);    
+    puts_my(source);
+    puts_my(destination);    
 
     strcpy(destination, source);
 
     printf ("lines after strcpy\n");
-    printf_str(source);
-    printf_str(destination); */
+    puts_my(source);
+    puts_my(destination); */
 
     /*strncpy_my(destination, source, n);
     printf ("lines after strncpy_my\n");
-    printf_str(source);
-    printf_str(destination);   */
+    puts_my(source);
+    puts_my(destination);   */
 
 
     /* strncpy(destination, source, n);
     printf ("lines after strncpy\n");
-    printf_str(source);
-    printf_str(destination);   */
+    puts_my(source);
+    puts_my(destination);   */
 
     /* strcat_my(destination, source);
     printf ("lines after strcat\n");
-    printf_str(source);
-    printf_str(destination);  */
+    puts_my(source);
+    puts_my(destination);  */
 
     printf("%d", strchr_my(source, ch));
 
@@ -44,7 +44,7 @@ int main ()
 }
 
 
-// TODO Rename func params from victim and robber to source and destination 
-// TODO Do separate files
+// TDO Rename func params from victim and robber to source and destination 
+// TDO Do separate files
 
-// FIXME Add return types to funcs
+// FXME Add return types to funcs
