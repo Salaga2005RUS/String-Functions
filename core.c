@@ -1,7 +1,6 @@
 #include "header.h"
 //==================================================================================================================================
-
-void strcpy_my(char *destination, char *source)
+char  *strcpy_my(char *destination, const char *source)
 {   
     int i = 0;
     while (source[i] != '\0')
@@ -14,6 +13,7 @@ void strcpy_my(char *destination, char *source)
         destination[i] = '\0';
         i++;
     }
+    return destination; 
 }
 
 void puts_my(char *string)
@@ -27,7 +27,8 @@ void puts_my(char *string)
     printf("\n");
 }
 
-void strncpy_my(char *destination, char *source, int n)
+
+char *strncpy_my(char *destination, const char *source, size_t n)
 {   
     int i = 0;
     for (i = 0; i < n; i++)
@@ -42,6 +43,8 @@ void strncpy_my(char *destination, char *source, int n)
         destination[i] = '\0';
         i++;
     }
+
+    return destination;
 }
 
 char *strcat_my(char *destination, const char *append)
@@ -64,10 +67,10 @@ char *strchr_my(const char *string, int ch)
     while ((string[i] != ch) && (string[i] != '\0')) i++;
 
     if (string[i] == '\0') return NULL;
-    else return string + i; 
+    else return (char *) string + i; 
 }
 
-int strlen_my(char *string)
+size_t strlen_my(const char *string)
 {
     int i = 0;
     while (string[i] != 0) i++;

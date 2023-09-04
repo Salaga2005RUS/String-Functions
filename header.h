@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
-void strcpy_my(char *destination, char *source);
+char  *strcpy_my(char *destination, const char *source);
 void puts_my(char *string);
-void strncpy_my(char *destination, char *source, int n);
-void strcat_my(char *destination, char *append);
-int strchr_my(char *string, char ch);
+char *strncpy_my(char *destination, const char *source, size_t n);
+char *strcat_my(char *destination, const char *append);
+char *strchr_my(const char *string, int ch);
+size_t strlen_my(const char *string);
