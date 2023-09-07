@@ -1,6 +1,9 @@
-#include "header.h"
+#include "header.h" // TODO: add newlines!
 int main ()
 {
+    // TODO: Do you have a testing system from quadratic equation?
+    //       If not, you can look up google test, it will make your
+    //       tests a lot more readable and convenient.
     char source [20] = "Ya pidoras";
     char destination [20] = "Na - na - na";
     char ch = 'p';
@@ -12,6 +15,9 @@ int main ()
 
     /* strcpy_my(destination, source); */
 
+    // TODO: Don't comment old code, you use git's history to restore it anyway,
+    //       and there are a lot more information about changes in git than there is
+    //       in comments!
    /* printf ("lines after strcpy_my\n");
     puts_my(source);
     puts_my(destination);    
@@ -38,7 +44,7 @@ int main ()
     puts_my(source);
     puts_my(destination);  */
 
-    printf("%d", strchr_my(source, ch));
+    printf("%d", strchr_my(source, ch)); // TODO: Your format argument is wrong!
 
     return 0;
 }
