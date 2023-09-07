@@ -1,6 +1,10 @@
-#include "header.h"
+#include "core.h" // TOO: add newlines!
+
 int main ()
 {
+    // TOO: Do you have a testing system from quadratic equation?
+    //       If not, you can look up google test, it will make your
+    //       tests a lot more readable and convenient.
     char source [20] = "Ya pidoras";
     char destination [20] = "Na - na - na";
     char ch = 'p';
@@ -12,6 +16,9 @@ int main ()
 
     /* strcpy_my(destination, source); */
 
+    // TOO: Don't comment old code, you use git's history to restore it anyway,
+    //       and there are a lot more information about changes in git than there is
+    //       in comments!
    /* printf ("lines after strcpy_my\n");
     puts_my(source);
     puts_my(destination);    
@@ -38,13 +45,8 @@ int main ()
     puts_my(source);
     puts_my(destination);  */
 
-    printf("%d", strchr_my(source, ch));
+    printf("%s", strchr_my(source, ch)); // TOO: Your format argument is wrong!
 
     return 0;
 }
 
-
-// TDO Rename func params from victim and robber to source and destination 
-// TDO Do separate files
-
-// FXME Add return types to funcs
